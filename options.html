@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conversion.com's Optimizely Extension - Options</title>
+    <link rel="stylesheet" href="css/options.css" />
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/options.js"></script>
+  </head>
+  <body>
+    <div id="menu" class="clearfix">
+      <a
+        href="http://conversion.com/?utm_source=chrome%20extension&amp;utm_medium=chrome%20extension&amp;utm_campaign=chrome%20extension%20clicks"
+        target="_blank"
+        id="logo"
+      >
+        <i>&nbsp;</i>
+      </a>
+      <a id="contact-us">
+        <i>&nbsp;</i>
+      </a>
+      <a
+        href="http://conversion.com/downloads/chrome-extension-guide.pdf"
+        target="_blank"
+        id="user-guide"
+      >
+        <i>&nbsp;</i>
+      </a>
+    </div>
+
+    <h1>Configuration page</h1>
+    <h5>Conversion.com's Optimizely Chrome Extension</h5>
+
+    <form id="setQAcookie" class="clearfix">
+      <div class="input-container">
+        <span class="cookie-name-message message">This field is required.</span>
+        <label for="cookie-name">QA cookie name</label>
+        <div class="input-field" id="cookie-name-field">
+          <input
+            type="text"
+            name="cookie-name"
+            id="cookie-name"
+            placeholder="e.g. myCookie"
+            autocomplete="off"
+          />
+          <i class="validation">&nbsp;</i>
+        </div>
+      </div>
+
+      <div class="input-container clearfix">
+        <span class="cookie-value-message message"
+          >This field is required.</span
+        >
+        <label for="cookie-value">QA cookie value</label>
+        <div id="cookie-value-options">
+          <span value="any">has any value<i>&nbsp;</i></span>
+          <div id="cookie-value-options-list">
+            <div class="cookie-value-option selected" value="any">
+              has any value
+            </div>
+            <div class="cookie-value-option" value="equals">equals</div>
+          </div>
+        </div>
+        <div class="input-field" id="cookie-value-field">
+          <input
+            type="text"
+            name="cookie-value"
+            id="cookie-value"
+            placeholder="e.g. myValue"
+            autocomplete="off"
+          />
+          <i class="validation">&nbsp;</i>
+        </div>
+      </div>
+
+      <input value="SAVE" type="submit" />
+    </form>
+    <div id="cv-modal-overlay">
+      <div class="cv-modal-box setup-qa-confirmation">
+        <span id="cv-close">&nbsp;</span>
+        <div id="cv-modal">
+          <div id="cv-title">SETUP QA COOKIE</div>
+          <h1>Well done! Your QA cookie<br />information has been saved.</h1>
+          <a id="cv-button" href="javascript:;" target="_blank">CLOSE</a
+          ><a
+            href="http://conversion.com/?utm_source=chrome%20extension&amp;utm_medium=chrome%20extension&amp;utm_campaign=chrome%20extension%20clicks"
+            target="_blank"
+            id="cv-logo"
+            ><img src="../images/logo.png" alt="Conversion.com" /></a
+          ><i id="bottom-line">&nbsp;</i>
+        </div>
+      </div>
+      <div class="cv-modal-box get-in-touch">
+        <span id="cv-close">&nbsp;</span>
+        <div id="cv-modal">
+          <div id="cv-title">GET IN TOUCH</div>
+          <form id="getInTouch" class="clearfix">
+            <div id="contact-options">
+              <span>
+                <input
+                  id="option1"
+                  name="options"
+                  checked
+                  type="radio"
+                  messageType="Bug"
+                />
+                <label for="option1">Report a bug</label>
+              </span>
+              <span>
+                <input
+                  id="option2"
+                  name="options"
+                  type="radio"
+                  messageType="Request"
+                />
+                <label for="option2">Feature request</label>
+              </span>
+              <span>
+                <input
+                  id="option3"
+                  name="options"
+                  type="radio"
+                  messageType="Contact"
+                />
+                <label for="option3">Other enquiries</label>
+              </span>
+            </div>
+            <div class="input-container">
+              <span class="title-message message">This field is required.</span>
+              <label for="title">Title</label>
+              <div class="input-field" id="title-field">
+                <input
+                  type="text"
+                  name="title"
+                  id="title"
+                  placeholder="e.g. QR Code"
+                  autocomplete="off"
+                />
+                <i class="validation">&nbsp;</i>
+              </div>
+            </div>
+            <div class="input-container">
+              <span class="desc-message message">This field is required.</span>
+              <label for="desc">Description</label>
+              <div class="input-field textarea" id="desc-field">
+                <textarea
+                  type="text"
+                  name="desc"
+                  id="desc"
+                  placeholder="e.g. This functionality is not working."
+                ></textarea>
+                <i class="validation">&nbsp;</i>
+              </div>
+            </div>
+            <div class="input-container optional">
+              <label for="desc">Image Url (optional)</label>
+              <div class="input-field" id="image-field">
+                <input
+                  type="text"
+                  name="image"
+                  id="image"
+                  placeholder="e.g. http://conversion.com/image.png"
+                  class="optional"
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+            <input value="SEND" type="submit" />
+          </form>
+          <a
+            href="http://conversion.com/?utm_source=chrome%20extension&amp;utm_medium=chrome%20extension&amp;utm_campaign=chrome%20extension%20clicks"
+            target="_blank"
+            id="cv-logo"
+          >
+            <img src="../images/logo.png" alt="Conversion.com" />
+          </a>
+          <i id="bottom-line">&nbsp;</i>
+        </div>
+      </div>
+      <div class="cv-modal-box get-in-touch-confirmation">
+        <span id="cv-close">&nbsp;</span>
+        <div id="cv-modal">
+          <div id="cv-title">GET IN TOUCH</div>
+          <h1>We have received your message.<br />Thanks for your input.</h1>
+          <a id="cv-button" class="close" href="javascript:;" target="_blank"
+            >CLOSE</a
+          >
+          <a
+            href="http://conversion.com/?utm_source=chrome%20extension&amp;utm_medium=chrome%20extension&amp;utm_campaign=chrome%20extension%20clicks"
+            target="_blank"
+            id="cv-logo"
+            ><img src="../images/logo.png" alt="Conversion.com"
+          /></a>
+          <i id="bottom-line">&nbsp;</i>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-line"></div>
+  </body>
+</html>

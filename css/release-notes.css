@@ -1,0 +1,647 @@
+/* FONTS */
+/*********************************************************************/
+@font-face {
+  font-family: "FS Joey Light";
+  src: url(../fonts/FSJoeyWeb-Light.eot);
+  src: url(../fonts/FSJoeyWeb-Light.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/FSJoeyWeb-Light.woff) format("woff"),
+    url(../fonts/FSJoeyWeb-Light.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FS Joey Regular";
+  src: url(../fonts/FSJoeyWeb-Regular.eot);
+  src: url(../fonts/FSJoeyWeb-Regular.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/FSJoeyWeb-Regular.woff) format("woff"),
+    url(../fonts/FSJoeyWeb-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FS Joey Medium";
+  src: url(../fonts/FSJoeyWeb-Medium.eot);
+  src: url(../fonts/FSJoeyWeb-Medium.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/FSJoeyWeb-Medium.woff) format("woff"),
+    url(../fonts/FSJoeyWeb-Medium.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FS Joey Bold";
+  src: url(../fonts/FSJoeyWeb-Bold.eot);
+  src: url(../fonts/FSJoeyWeb-Bold.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/FSJoeyWeb-Bold.woff) format("woff"),
+    url(../fonts/FSJoeyWeb-Bold.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FS Ingrid Bold";
+  src: url(../fonts/FSIngridWeb-Bold.eot);
+  src: url(../fonts/FSIngridWeb-Bold.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/FSIngridWeb-Bold.woff) format("woff"),
+    url(../fonts/FSIngridWeb-Bold.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* RESET & NORMALIZE */
+/*********************************************************************/
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-family: "FS Joey Regular";
+  font-size: 13px;
+  line-height: 100%;
+  text-align: left;
+  color: #221f1f;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+progress {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  vertical-align: baseline;
+  outline: none;
+}
+
+audio:not([controls]) {
+  height: 0;
+  display: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  color: inherit;
+  font-size: 100%;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+  vertical-align: top;
+}
+
+input::-moz-placeholder {
+  color: #898989;
+  opacity: 1;
+}
+
+::-webkit-input-placeholder {
+  color: #898989;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #898989;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #898989;
+  opacity: 1;
+}
+
+a {
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+:focus {
+  outline: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* HEADER */
+/*********************************************************************/
+#header {
+  width: 960px;
+  padding-top: 170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#header .logo {
+  width: 214px;
+  height: 23px;
+  display: block;
+  background: url(../images/logo.png) 0 0 no-repeat;
+  position: absolute;
+  top: 31px;
+  left: 0;
+}
+
+#header .hero {
+  margin-bottom: 76px;
+  text-align: center;
+}
+
+#header .hero h1 {
+  margin-bottom: 17px;
+  font-family: "FS Ingrid Bold";
+  font-size: 62px;
+  line-height: 62px;
+  font-weight: 400;
+}
+
+#header .hero p {
+  font-family: "FS Joey Light";
+  font-size: 30px;
+  line-height: 30px;
+}
+
+/* CONTENT */
+/*********************************************************************/
+#content {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#content img.laptop {
+  width: auto;
+  height: calc(100% + 71px);
+  position: absolute;
+  left: calc(-100% + 80px);
+  bottom: -71px;
+  z-index: 2;
+}
+
+#content .text {
+  width: 990px;
+  height: auto;
+  padding: 0px 0 20px 450px;
+  position: relative;
+  z-index: 3;
+}
+
+#content .text.thanks {
+  padding-top: 390px;
+}
+
+#content .thank-you {
+  display: none;
+  border-top: 2px solid rgb(204, 204, 204);
+  border-bottom: 2px solid rgb(204, 204, 204);
+  padding: 43px 0;
+}
+
+#content .text h2 {
+  margin-bottom: 15px;
+  font-family: "FS Joey Bold";
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 400;
+}
+
+#content .text h2.whats-new {
+  width: 380px;
+}
+
+#content .text h2 a {
+  font-size: 16px;
+  color: #7d7d7d;
+  float: right;
+  margin-top: 4px;
+  font-weight: 600;
+  font-family: "FS Joey Light";
+  text-decoration: underline;
+}
+
+#content .text .thank-you h2 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+
+#content .text .thank-you p {
+  font-size: 22px;
+  color: #009fe3;
+  font-family: "FS Joey Light";
+  margin-top: 6px;
+  letter-spacing: 0px;
+  margin-bottom: 3px;
+}
+
+#content .text p {
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.1px;
+  margin-top: 25px;
+}
+
+#content .text ul {
+  font-size: 19px;
+  line-height: 23px;
+}
+
+#content .text ul li {
+  padding-left: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#content .text .bullet {
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  border-radius: 10px;
+  display: block;
+  background: #009fe3;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+/*#content .thanks {
+    width:505px;
+    height:157px;
+    padding-top:44px;
+    margin-top:2px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    background:#fff;
+    display:none
+}
+
+#content .thanks .line-1 {
+    margin-bottom:7px;
+    font-family:'FS Joey Bold';
+    font-size:36px;
+    line-height:36px;
+    font-weight:400
+}
+
+#content .thanks .line-2 {
+    font-family:'FS Joey Light';
+    font-size:22px;
+    line-height:22px;
+    color:#009fe3
+}*/
+
+#content .questions {
+  font-size: 19px;
+  line-height: 19px;
+}
+
+#content .questions a {
+  text-decoration: underline;
+  color: #009fe3;
+}
+
+#content .questions a:hover {
+  text-decoration: none;
+}
+
+/* FORM */
+/*********************************************************************/
+
+form {
+  width: 380px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+form .message {
+  display: none;
+  font: 500 1em/1 "FS Joey Medium";
+  float: right;
+  color: #ffa061;
+}
+
+form label {
+  font: 500 1em/1 "FS Joey Regular";
+  display: block;
+  font-size: 16px;
+}
+
+form .input-field {
+  margin: 3px 0 21px;
+  border: 2px solid rgb(0, 159, 227);
+  padding: 0 2.25em 0 10px;
+  background: rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  font: 1em/1 "FS Joey Regular";
+  color: #898989;
+  border: none;
+  width: 100%;
+  padding: 11px 0 12px;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+form textarea {
+  height: 79px;
+  padding: 12px 0 11px;
+}
+
+form .input-field .validation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 24px;
+  background: transparent url(../images/validation-icons.png) left 0 no-repeat;
+  margin: 8px 0 0;
+}
+
+form .input-field.error {
+  border-color: #ffa061;
+}
+
+form .input-field.error .validation {
+  background-position: 0 -48px;
+}
+
+form .input-field.valid .validation {
+  background-position: 0 -24px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  height: 44px;
+  margin: 0 0 16px;
+  border: 2px solid #009fe3;
+  display: inline-block;
+  background: #009fe3;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  line-height: 42px;
+}
+
+form input[type="submit"]:hover {
+  border: 2px solid #009fe3;
+  background: #fff;
+  text-decoration: none;
+  color: #009fe3;
+}
+
+/* FOOTER */
+/*********************************************************************/
+.upper-footer {
+  display: block;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 88px;
+  margin-top: 20px;
+}
+
+.footer {
+  display: block;
+  box-sizing: border-box;
+  bottom: 0;
+  padding: 29px 1.875em 20px;
+  width: 100%;
+  height: auto;
+  background-color: rgb(34, 31, 31);
+}
+
+.footer .inner {
+  padding: 0;
+  max-width: 703px;
+  margin: 0 auto;
+}
+
+.footer .trusted-by {
+  display: inline-block;
+}
+
+.footer h4 {
+  background: none;
+  display: block;
+  float: left;
+  padding: 0;
+  position: relative;
+  font-size: 20px;
+  top: 5px;
+  color: #cccccc;
+}
+
+.footer .copyright {
+  font-size: 12px;
+  padding: 0;
+  margin: 25px 0 0;
+  width: auto;
+  clear: both;
+  color: #cccccc;
+  text-align: center;
+}
+
+.footer .logos-container {
+  margin-left: 47px;
+  border: none;
+  float: left;
+  width: 573px;
+  padding: 0;
+}
+
+.footer .logos {
+  background-image: url(../images/logos.png);
+  width: 573px;
+  height: 33px;
+}
+
+/* PAGE MESSAGE */
+/*********************************************************************/
+.page-message {
+  width: 100%;
+  height: 100%;
+  display: table;
+  background: #fff url(../images/message-bg.jpg) center no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  line-height: 1.4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+.page-message h2 {
+  margin: 0 0 1em;
+  font-size: 3.875em;
+  line-height: 1.1;
+  font-family: "FS Joey Bold";
+  color: #fff;
+}
+
+.page-message h2 span {
+  color: #51ff9e;
+}
+
+.page-message .cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.page-message .inner {
+  width: 1024px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.page-message .get-in-touch {
+  width: 144px;
+  height: 44px;
+  padding: 12px 0;
+  margin: 0;
+  border: 2px solid #fff;
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.page-message .get-in-touch:hover {
+  background-color: #fff;
+  text-decoration: none;
+  color: #51ff9e;
+}

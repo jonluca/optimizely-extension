@@ -1,0 +1,740 @@
+@font-face {
+  font-family: "fsJoey";
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/FSJoeyWeb-Regular.eot");
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/FSJoeyWeb-Regular.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "fsIngrid";
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/FSIngridWeb-Regular.eot");
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/FSIngridWeb-Regular.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "fsIngrid-light";
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/FSIngridWeb-Light.eot");
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/FSIngridWeb-Light.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "fsIngrid-bold";
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/FSIngridWeb-Bold.eot");
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/FSIngridWeb-Bold.woff")
+    format("woff");
+}
+
+.cv-visible {
+  display: block !important;
+}
+
+.cv-invisible {
+  display: none !important;
+}
+
+#cv-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  position: fixed !important;
+  bottom: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 999999999999 !important;
+}
+
+#cv-modal-overlay #cv-modal-box {
+  animation: none;
+  animation-delay: 0;
+  animation-direction: normal;
+  animation-duration: 0;
+  animation-fill-mode: none;
+  animation-iteration-count: 1;
+  animation-name: none;
+  animation-play-state: running;
+  animation-timing-function: ease;
+  backface-visibility: visible;
+  background: 0;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  border: 0;
+  border-style: none;
+  border-width: medium;
+  border-color: inherit;
+  border-bottom: 0;
+  border-bottom-color: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-style: none;
+  border-bottom-width: medium;
+  border-collapse: separate;
+  border-image: none;
+  border-left: 0;
+  border-left-color: inherit;
+  border-left-style: none;
+  border-left-width: medium;
+  border-radius: 0;
+  border-right: 0;
+  border-right-color: inherit;
+  border-right-style: none;
+  border-right-width: medium;
+  border-spacing: 0;
+  border-top: 0;
+  border-top-color: inherit;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top-style: none;
+  border-top-width: medium;
+  bottom: auto;
+  box-shadow: none;
+  box-sizing: content-box;
+  caption-side: top;
+  clear: none;
+  clip: auto;
+  color: inherit;
+  columns: auto;
+  column-count: auto;
+  column-fill: balance;
+  column-gap: normal;
+  column-rule: medium none currentColor;
+  column-rule-color: currentColor;
+  column-rule-style: none;
+  column-rule-width: none;
+  column-span: 1;
+  column-width: auto;
+  content: normal;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: auto;
+  direction: ltr;
+  display: inline;
+  empty-cells: show;
+  float: none;
+  font: normal;
+  font-family: inherit;
+  font-size: medium;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  height: auto;
+  hyphens: none;
+  left: auto;
+  letter-spacing: normal;
+  line-height: normal;
+  list-style: none;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: disc;
+  margin: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  max-height: none;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
+  opacity: 1;
+  orphans: 0;
+  outline: 0;
+  outline-color: invert;
+  outline-style: none;
+  outline-width: medium;
+  overflow: visible;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  page-break-after: auto;
+  page-break-before: auto;
+  page-break-inside: auto;
+  perspective: none;
+  perspective-origin: 50% 50%;
+  position: static;
+  /* May need to alter quotes for different locales (e.g fr) */
+  quotes: "\201C""\201D""\2018""\2019";
+  right: auto;
+  tab-size: 8;
+  table-layout: auto;
+  text-align: inherit;
+  text-align-last: auto;
+  text-decoration: none;
+  text-decoration-color: inherit;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  top: auto;
+  transform: none;
+  transform-style: flat;
+  transition: none;
+  transition-delay: 0s;
+  transition-duration: 0s;
+  transition-property: none;
+  transition-timing-function: ease;
+  unicode-bidi: normal;
+  vertical-align: baseline;
+  visibility: visible;
+  white-space: normal;
+  widows: 0;
+  width: auto;
+  word-spacing: normal;
+  z-index: auto;
+  width: 478px !important;
+  height: 226px !important;
+  background-color: white !important;
+  padding: 32px 20px !important;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.6) !important;
+  position: absolute !important;
+  top: calc(50% - 113px) !important;
+  left: calc(50% - 239px) !important;
+  box-sizing: initial !important;
+  font-family: "fsJoey" !important;
+  color: #221f1f !important;
+  text-transform: initial !important;
+  border: 0 !important;
+  text-align: initial !important;
+}
+
+#cv-modal-overlay #cv-modal-box.get-in-touch {
+  width: 520px !important;
+  height: 468px !important;
+  top: calc(50% - 260px) !important;
+  left: calc(50% - 237.5px) !important;
+}
+
+#cv-modal-overlay #cv-modal-box.get-in-touch-confirmation {
+  display: none;
+}
+
+#cv-modal-overlay #cv-modal-box span#cv-close {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-image: url(https://cfactory-img.s3.amazonaws.com/chrome-extension/images/lightbox-close.png);
+  cursor: pointer;
+}
+
+#cv-modal-overlay #cv-modal-box #cv-title {
+  font-size: 16px !important;
+  position: relative !important;
+  width: 100% !important;
+  text-align: center !important;
+  font-family: "fsJoey" !important;
+  color: #221f1f !important;
+  line-height: initial !important;
+}
+
+#cv-modal-overlay #cv-modal-box #cv-title:before,
+#cv-modal-overlay #cv-modal-box #cv-title:after {
+  position: absolute !important;
+  width: 167px !important;
+  height: 1px !important;
+  background-color: #cccccc !important;
+  display: block !important;
+  content: "" !important;
+  top: 9px !important;
+}
+
+#cv-modal-overlay #cv-modal-box #cv-title:before {
+  left: 0 !important;
+}
+
+#cv-modal-overlay #cv-modal-box #cv-title:after {
+  right: 0 !important;
+}
+
+#cv-modal-overlay #cv-modal-box h1 {
+  font-size: 28px !important;
+  font-family: "fsJoey" !important;
+  color: #221f1f !important;
+  letter-spacing: normal !important;
+  text-align: center !important;
+  margin: 41px 0 19px 0 !important;
+  line-height: normal !important;
+  text-rendering: initial !important;
+  font-weight: normal !important;
+  padding: 0 !important;
+}
+
+#cv-modal-overlay #cv-modal-box h1 span {
+  color: #009fe3 !important;
+}
+
+#cv-modal-overlay #cv-modal-box a#cv-button {
+  color: #009fe3 !important;
+  border: 0.125em solid #009fe3 !important;
+  font-size: 16px !important;
+  font-family: "fsJoey" !important;
+  padding: 10.5px 0 !important;
+  width: 238px !important;
+  height: initial !important;
+  text-align: center !important;
+  display: block !important;
+  margin: 0 auto !important;
+  text-decoration: none !important;
+  background: none !important;
+  text-indent: initial !important;
+  background-image: none !important;
+}
+
+#cv-modal-overlay #cv-modal-box a#cv-button:hover {
+  background-color: #009fe3 !important;
+  color: #ffffff !important;
+}
+
+#cv-modal-overlay #cv-modal-box a#cv-logo {
+  position: absolute !important;
+  bottom: 14px !important;
+  right: 20px !important;
+}
+
+#cv-modal-overlay #cv-modal-box a#cv-logo img {
+  width: 89px !important;
+  height: 10px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#cv-modal-overlay #cv-modal-box i#bottom-line {
+  background-color: #009fe3 !important;
+  height: 4px !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+#cv-modal-overlay #cv-modal-box #contact-options {
+  font-size: 14px !important;
+  text-align: center !important;
+  font-family: "fsJoey" !important;
+  margin-top: 33px !important;
+  margin-bottom: 24px !important;
+  line-height: initial !important;
+}
+
+#cv-modal-overlay #cv-modal-box #contact-options span {
+  width: 124px !important;
+  display: inline-block !important;
+  text-align: left !important;
+}
+
+#cv-modal-overlay #cv-modal-box #contact-options input[type="radio"] {
+  width: 24px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 0 !important;
+}
+
+#cv-modal-overlay #cv-modal-box #contact-options input[type="radio"] + label {
+  display: inline-block !important;
+  margin-left: -23px !important;
+  padding-left: 26px !important;
+  background: url(https://cfactory-img.s3.amazonaws.com/chrome-extension/images/radio.png)
+    no-repeat 0 0;
+  line-height: 24px !important;
+  font-family: "fsJoey";
+  font-size: 14px;
+  display: block;
+  background-position-y: 1px !important;
+}
+
+#cv-modal-overlay
+  #cv-modal-box
+  #contact-options
+  input[type="radio"]:checked
+  + label {
+  background-image: url(https://cfactory-img.s3.amazonaws.com/chrome-extension/images/radio-selected.png) !important;
+  background-position-y: 1px !important;
+}
+
+form#getInTouch {
+  width: 380px !important;
+  margin: 0 auto !important;
+}
+
+form#getInTouch .input-container {
+  margin-bottom: 20px !important;
+  line-height: initial !important;
+}
+
+form#getInTouch .input-container label {
+  font-family: "fsJoey" !important;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  margin: 0 !important;
+}
+
+form#getInTouch .input-container.any div#cookie-value-field {
+  background-color: #e8e8e8 !important;
+  border-color: #adacac !important;
+}
+
+form#getInTouch .message {
+  display: none;
+  font-family: "fsJoey" !important;
+  font-size: 16px !important;
+  float: right !important;
+  color: #ffa061 !important;
+}
+
+form#getInTouch .input-field.focus {
+  border-width: 0.188em !important;
+  padding: 1px 47px 1px 7px !important;
+}
+
+form#getInTouch .input-field.focus input {
+  padding: 10px 4.5px !important;
+}
+
+form#getInTouch .input-field.error {
+  border-color: #ffa061 !important;
+}
+
+form#getInTouch .input-field.error i.validation {
+  background-position-y: -48px !important;
+}
+
+form#getInTouch .input-field.success i.validation {
+  background-position-y: -24px !important;
+}
+
+form#getInTouch .input-field {
+  margin: 2px 0 0 0 !important;
+  border: 0.125em solid #009fe3 !important;
+  padding: 2px 4em 2px 0.5em !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  position: relative !important;
+  height: 38px !important;
+  box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+}
+
+form#getInTouch .input-field.textarea {
+  height: inherit !important;
+}
+
+form#getInTouch .input-field#cookie-value-field {
+  width: 172px !important;
+  float: right !important;
+  box-sizing: border-box !important;
+}
+
+form#getInTouch .input-field#cookie-value-field.invisible > * {
+  visibility: hidden !important;
+}
+
+form#getInTouch input {
+  height: 18px !important;
+  padding: 0.625em 4.5px !important;
+}
+
+form#getInTouch input,
+form#getInTouch textarea {
+  font-family: "fsJoey" !important;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  color: #898989 !important;
+  border: none;
+  width: 100% !important;
+  outline: none !important;
+  background: transparent !important;
+  margin: 0 !important;
+  font-style: normal !important;
+  box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+  box-shadow: 0 0 !important;
+}
+
+form#getInTouch textarea {
+  resize: none;
+  height: 64px !important;
+  padding: 12px 4.5px !important;
+}
+
+form#getInTouch ::-webkit-input-placeholder {
+  font-size: 16px !important;
+  line-height: 16px !important;
+  height: 18px !important;
+  font-style: normal !important;
+}
+
+form#getInTouch ::-moz-placeholder {
+  font-size: 16px !important;
+  line-height: 16px !important;
+  height: 18px !important;
+  font-style: normal !important;
+}
+
+form#getInTouch :-ms-input-placeholder {
+  font-size: 16px !important;
+  line-height: 16px !important;
+  height: 18px !important;
+  font-style: normal !important;
+}
+
+form#getInTouch input:-moz-placeholder {
+  font-size: 16px !important;
+  line-height: 16px !important;
+  height: 18px !important;
+  font-style: normal !important;
+}
+
+form#getInTouch .input-field .validation {
+  position: absolute !important;
+  top: 3px !important;
+  right: 10px !important;
+  width: 24px !important;
+  height: 24px;
+  background: transparent
+    url(https://cfactory-img.s3.amazonaws.com/chrome-extension/images/validation-icons.png)
+    left 0 no-repeat !important;
+  margin: 0.425em 0 0 !important;
+  box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+}
+
+form#getInTouch .input-field.focus .validation {
+  top: 2px !important;
+  right: 9px !important;
+}
+
+form#getInTouch input[type="submit"] {
+  border: 0.125em solid #009fe3 !important;
+  font-size: 16px !important;
+  font-family: "fsJoey" !important;
+  padding: 10.5px 0px !important;
+  text-align: center !important;
+  display: block !important;
+  float: right !important;
+  cursor: pointer !important;
+  width: 140px !important;
+  height: 44px !important;
+  background-color: #ffffff !important;
+  color: #009fe3 !important;
+  line-height: 20px !important;
+  box-sizing: border-box !important;
+  -webkit-box-sizing: border-box !important;
+}
+
+form#getInTouch input[type="submit"]:hover {
+  background-color: #009fe3 !important;
+  color: #ffffff !important;
+}
+
+form#getInTouch div.cookie-value-option.selected {
+  background-color: #d2f1ff !important;
+  color: #009fe3 !important;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  form#getInTouch .input-field .validation {
+    background-image: url(https://cfactory-img.s3.amazonaws.com/chrome-extension/images/validation-icons@2.png);
+    -webkit-background-size: 24px 72px;
+    background-size: 24px 72px;
+  }
+}
+
+/********** IN-BROWSE EVENTS **********/
+
+div#cv-optimizely-events {
+  right: 10px;
+  bottom: 32px;
+  top: initial;
+  left: initial;
+  vertical-align: baseline;
+  position: fixed;
+  z-index: 2147483647;
+  background-color: rgba(7, 162, 227, 0.969);
+  width: 300px;
+  height: 388px;
+  border-radius: 10px;
+  padding: 3px 3px 3px 20px;
+  font-size: 14px;
+}
+
+div#cv-optimizely-events.forceCollapsed {
+  height: 40px;
+}
+
+div#cv-optimizely-events div#cv-box-header:after {
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+div#cv-optimizely-events a#cv-clear-events {
+  color: white;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "fsIngrid";
+  text-decoration: underline;
+  float: left;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+div#cv-optimizely-events a#cv-exp-coll {
+  width: 34px;
+  height: 34px;
+  margin-right: 3px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 0 0 0 10px;
+  text-decoration: none;
+  outline: 0;
+  vertical-align: middle;
+  position: relative;
+  float: right;
+}
+
+div#cv-optimizely-events a#cv-exp-coll img {
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  transition: all 1s ease;
+  width: 13px;
+  height: 8px;
+}
+
+div#cv-optimizely-events.collapsed a#cv-exp-coll img {
+  transform: rotate(180deg);
+}
+
+div#cv-optimizely-events a#cv-close {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 0 10px 0 0;
+  text-decoration: none;
+  outline: 0;
+  vertical-align: middle;
+  position: relative;
+  float: right;
+}
+
+div#cv-optimizely-events.collapsed a#cv-close {
+  border-radius: 0 10px 10px 0;
+}
+
+div#cv-optimizely-events a#cv-close img {
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  width: 14px;
+  height: 14px;
+}
+
+div#cv-optimizely-events div#cv-events {
+  text-align: left;
+  margin-top: 22px;
+  max-height: 316px;
+  overflow: auto;
+}
+
+div#cv-optimizely-events.forceCollapsed a#cv-events {
+  opacity: 0;
+}
+
+div#cv-optimizely-events div#cv-events .cv-opt-event {
+  width: 250px;
+  white-space: nowrap;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-overflow: clip;
+  margin-bottom: 10px;
+}
+
+div#cv-optimizely-events div#cv-events .cv-opt-event i {
+  vertical-align: middle;
+  width: 18px;
+  height: 15px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+div#cv-optimizely-events div#cv-events .cv-opt-event.pageview i {
+  background-image: url("https://cfactory-img.s3.amazonaws.com/chrome-extension/images/pageview-white.png");
+  background-position: 0 0;
+}
+
+div#cv-optimizely-events div#cv-events .cv-opt-event.engagement i {
+  background-image: url("https://cfactory-img.s3.amazonaws.com/chrome-extension/images/engagement-white.png");
+  background-position: 2px 0;
+}
+
+div#cv-optimizely-events div#cv-events .cv-opt-event.click i {
+  background-image: url("https://cfactory-img.s3.amazonaws.com/chrome-extension/images/click-white.png");
+  background-position: 2px 0;
+}
+
+div#cv-optimizely-events div#cv-events .cv-opt-event.custom i {
+  background-image: url("https://cfactory-img.s3.amazonaws.com/chrome-extension/images/click-white.png");
+  background-position: 2px 0;
+}
+
+div#cv-optimizely-events div#cv-events .cv-opt-event.bucketing i {
+  background-image: url("https://cfactory-img.s3.amazonaws.com/chrome-extension/images/bucketing-white.png");
+  background-position: 2px 0;
+}
+
+div#cv-optimizely-events div#cv-events .cv-opt-event.revenue i {
+  background-image: url("https://cfactory-img.s3.amazonaws.com/chrome-extension/images/revenue-white.png");
+  background-position: 2px 0;
+}
+
+div#cv-optimizely-events div#cv-events .cv-opt-event.segmentation i {
+  background-image: url("https://cfactory-img.s3.amazonaws.com/chrome-extension/images/segmentation-white.png");
+  background-position: 1px 0;
+}
+
+div#cv-optimizely-events div#cv-events .cv-opt-event strong {
+  color: white;
+  font-family: "fsIngrid-bold";
+  vertical-align: -1px;
+  margin: 0 9px 0 6px;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+div#cv-optimizely-events div#cv-events .cv-opt-event span {
+  color: white;
+  font-family: "fsIngrid";
+  letter-spacing: 0.8px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+div#cv-optimizely-events div#cv-events::-webkit-scrollbar-track {
+  background-color: #908f8f;
+}
+
+div#cv-optimizely-events div#cv-events::-webkit-scrollbar {
+  width: 10px;
+  background-color: #221f1f;
+}
+
+div#cv-optimizely-events div#cv-events::-webkit-scrollbar-thumb {
+  background-color: #221f1f;
+}

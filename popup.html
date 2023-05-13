@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Conversion.com's Optimizely Extension</title>
+    <link rel="stylesheet" href="css/popup.css" />
+    <script src="js/jquery-2.1.3.min.js"></script>
+  </head>
+  <body>
+    <div id="active-experiments">
+      <a
+        style="position: absolute; color: white; top: -20px"
+        href="javascript:;"
+        >test</a
+      >
+      <a
+        href="http://conversion.com/downloads/chrome-extension-guide.pdf"
+        id="hiw"
+        target="_blank"
+        title="How it works?"
+        ><img src="images/info.png"
+      /></a>
+      <a
+        href="javascript:;"
+        id="get-in-touch"
+        target="_blank"
+        title="Get in touch"
+        ><img src="images/email.png"
+      /></a>
+      <div class="toggle-qa">
+        QA MODE
+        <div class="onoffswitch">
+          <input
+            type="checkbox"
+            name="onoffswitch"
+            class="onoffswitch-checkbox"
+            id="qaMode"
+          />
+          <label class="onoffswitch-label" for="qaMode">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+          </label>
+        </div>
+      </div>
+      <div id="experiments">
+        <h1 class="not-running">Looking for Optimizely...</h1>
+        <div class="loading-icon">
+          <svg
+            class="spinner"
+            width="30px"
+            height="30px"
+            viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              class="path"
+              fill="none"
+              stroke-width="6"
+              stroke-linecap="round"
+              cx="33"
+              cy="33"
+              r="30"
+            ></circle>
+          </svg>
+        </div>
+      </div>
+      <div class="bottom-info">
+        <span id="revision"></span>
+        <a
+          href="http://conversion.com/?utm_source=chrome%20extension&utm_medium=chrome%20extension&utm_campaign=chrome%20extension%20clicks"
+          target="_blank"
+          ><img src="images/logo.png" alt="Conversion.com"
+        /></a>
+      </div>
+      <div class="bottom-line"></div>
+    </div>
+    <div id="copyConfirmation"><span>Copied to clipboard</span></div>
+    <div id="dummy-node"></div>
+    <script src="js/config.js"></script>
+    <script src="js/popup_functions.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

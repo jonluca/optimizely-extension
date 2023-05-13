@@ -1,0 +1,471 @@
+@font-face {
+  font-family: "fsJoey";
+  src: url("../fonts/FSJoeyWeb-Regular.eot");
+  src: url("../fonts/FSJoeyWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "fsJoey-Light";
+  src: url("../fonts/FSJoeyWeb-Light.eot");
+  src: url("../fonts/FSJoeyWeb-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "fsIngrid";
+  src: url("../fonts/FSIngridWeb-Regular.eot");
+  src: url("../fonts/FSIngridWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "fsIngrid-light";
+  src: url("../fonts/FSIngridWeb-Light.eot");
+  src: url("../fonts/FSIngridWeb-Light.woff") format("woff");
+}
+
+body {
+  width: 960px;
+  margin: 0 auto;
+  padding: 1.875em 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.cv-visible {
+  display: block !important;
+}
+
+#menu #logo {
+  display: block;
+  background-image: url("../images/page-logo.png");
+  width: 214px;
+  height: 23px;
+  float: left;
+  text-decoration: none;
+}
+
+#menu #contact-us {
+  display: none;
+  background-image: url("../images/page-email.png");
+  width: 28px;
+  height: 19px;
+  float: right;
+  text-decoration: none;
+  background-size: 28px auto;
+  background-repeat: no-repeat;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+#menu #user-guide {
+  display: block;
+  background-image: url("../images/page-info.png");
+  width: 21px;
+  height: 21px;
+  float: right;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 62px;
+  color: #221f1f;
+  font-family: "fsJoey";
+  font-weight: bold;
+  margin-top: 127px;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-size: 28px;
+  color: #221f1f;
+  font-family: "fsJoey-Light";
+  margin-top: 14px;
+}
+
+div.bottom-line {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: #009fe3;
+  position: fixed;
+}
+
+form#setQAcookie {
+  width: 380px;
+}
+
+form .input-container {
+  margin-bottom: 20px;
+}
+
+form#setQAcookie .input-container.any div#cookie-value-field {
+  background-color: #e8e8e8;
+  border-color: #adacac;
+}
+
+form .message {
+  display: none;
+  font-family: "fsJoey";
+  font-size: 16px;
+  float: right;
+  color: #ffa061;
+}
+
+form label {
+  font-family: "fsJoey";
+  font-size: 16px;
+  display: block;
+}
+
+form .input-field.focus {
+  border-width: 3px;
+  padding: 1px 47px 1px 5px;
+}
+
+form .input-field.error {
+  border-color: #ffa061;
+}
+
+form .input-field.error i.validation {
+  background-position-y: -48px;
+}
+
+form .input-field.success i.validation {
+  background-position-y: -24px;
+}
+
+form .input-field {
+  margin: 0.5em 0;
+  border: 0.225em solid #009fe3;
+  padding: 2px 4em 2px 0.5em;
+  background: rgba(255, 255, 255, 0.9);
+  position: relative;
+}
+
+form .input-field#cookie-value-field {
+  width: 172px;
+  float: right;
+  box-sizing: border-box;
+}
+
+form .input-field#cookie-value-field.invisible > * {
+  visibility: hidden;
+}
+
+form input {
+  font-family: "fsJoey";
+  font-size: 16px;
+  color: #898989;
+  border: none;
+  width: 100%;
+  padding: 0.625em 4.5px;
+  outline: none;
+  background: transparent;
+}
+
+form .input-field .validation {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background: transparent url("../images/validation-icons.png") left 0 no-repeat;
+  margin: 0.425em 0 0;
+}
+
+form .input-field.focus .validation {
+  top: 2px;
+  right: 9px;
+}
+
+form #cookie-value-options {
+  font-family: "fsJoey";
+  font-size: 16px;
+  color: #009fe3;
+  position: relative;
+  width: 172px;
+  float: left;
+  margin: 6px 0;
+}
+
+form #cookie-value-options span {
+  border: 0.125em solid #009fe3;
+  min-width: 119px;
+  max-width: 119px;
+  display: block;
+  padding: 13px 41px 13px 10px;
+  position: relative;
+  line-height: 16px;
+  cursor: default;
+}
+
+form #cookie-value-options span i {
+  background: url("../images/arrow.png") no-repeat center;
+  background-color: #009fe3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+}
+
+form #cookie-value-options #cookie-value-options-list {
+  display: none;
+  position: absolute;
+  border: 0.125em solid #009fe3;
+  background-color: #ffffff;
+  min-width: 148px;
+  z-index: 1;
+  top: 44px;
+  cursor: default;
+}
+
+form input[type="submit"] {
+  background-color: #009fe3;
+  color: #ffffff;
+  border: 1px solid #009fe3;
+  font-size: 16px;
+  font-family: "fsJoey";
+  padding: 10.5px 0px;
+  width: 172px;
+  text-align: center;
+  display: block;
+  float: right;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #009fe3;
+}
+
+form div.cookie-value-option {
+  padding: 10px;
+  min-width: 150px;
+}
+
+form div.cookie-value-option:hover {
+  background-color: #009fe3;
+  color: #ffffff;
+}
+
+form div.cookie-value-option.selected {
+  background-color: #d2f1ff !important;
+  color: #009fe3 !important;
+}
+
+form #contact-options {
+  padding-left: 4px;
+  width: 397px;
+  font-size: 14px;
+  text-align: center;
+  font-family: "fsJoey";
+  margin-top: 31px;
+  margin-bottom: 24px;
+}
+
+form #contact-options span {
+  width: 124px;
+  display: inline-block;
+  text-align: left;
+}
+
+form #contact-options input[type="radio"] {
+  width: 24px;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+form #contact-options input[type="radio"] + label {
+  display: inline-block;
+  padding-left: 26px;
+  background: url(../images/radio.png) no-repeat 0 0;
+  line-height: 24px;
+  font-family: "fsJoey";
+  font-size: 14px;
+  display: block;
+  background-position-y: 1px;
+}
+
+form #contact-options input[type="radio"]:checked + label {
+  background-image: url(../images/radio-selected.png);
+  background-position-y: 1px;
+}
+
+form#getInTouch {
+  width: 380px;
+  margin: 0px auto;
+}
+
+form#getInTouch textarea {
+  font-family: "fsJoey";
+  font-size: 16px;
+  line-height: 16px;
+  color: #898989;
+  border: none;
+  width: 100%;
+  outline: none;
+  background: transparent;
+  margin: 0;
+  resize: none;
+  height: 64px;
+  padding: 12px 0 11px;
+}
+
+#cv-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999999999999;
+  display: none;
+}
+
+#cv-modal-overlay .cv-modal-box {
+  width: 478px;
+  height: 226px;
+  background-color: white;
+  padding: 32px 20px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: calc(50% - 145px);
+  left: calc(50% - 259px);
+  box-sizing: initial;
+  display: none;
+}
+
+#cv-modal-overlay .cv-modal-box.get-in-touch {
+  width: 520px;
+  height: 468px;
+  top: calc(50% - 260px);
+  left: calc(50% - 237.5px);
+}
+
+#cv-modal-overlay .cv-modal-box span#cv-close {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background-image: url(https://cfactory-img.s3.amazonaws.com/chrome-extension/images/lightbox-close.png);
+  cursor: pointer;
+}
+
+#cv-modal-overlay .cv-modal-box #cv-title {
+  font-size: 16px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-family: "fsJoey";
+  color: #221f1f;
+}
+
+#cv-modal-overlay .cv-modal-box #cv-title:before,
+#cv-modal-overlay .cv-modal-box #cv-title:after {
+  position: absolute;
+  width: 167px;
+  height: 1px;
+  background-color: #cccccc;
+  display: block;
+  content: "";
+  top: 9px;
+}
+
+#cv-modal-overlay .cv-modal-box #cv-title:before {
+  left: 0;
+}
+
+#cv-modal-overlay .cv-modal-box #cv-title:after {
+  right: 0;
+}
+
+#cv-modal-overlay .cv-modal-box h1 {
+  font-size: 28px;
+  font-family: "fsJoey";
+  color: #221f1f;
+  letter-spacing: normal;
+  text-align: center;
+  margin: 41px 0 19px 0;
+  line-height: normal;
+  text-rendering: initial;
+  font-weight: normal;
+}
+
+#cv-modal-overlay .cv-modal-box h1 span {
+  color: #009fe3;
+}
+
+#cv-modal-overlay .cv-modal-box a#cv-button {
+  color: #009fe3;
+  border: 1px solid #009fe3;
+  font-size: 16px;
+  font-family: "fsJoey";
+  padding: 10.5px 0;
+  width: 238px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+#cv-modal-overlay .cv-modal-box a#cv-button:hover {
+  background-color: #009fe3;
+  color: #ffffff;
+}
+
+#cv-modal-overlay .cv-modal-box a#cv-logo {
+  position: absolute;
+  bottom: 14px;
+  right: 20px;
+}
+
+#cv-modal-overlay .cv-modal-box a#cv-logo img {
+  width: 89px;
+  height: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+#cv-modal-overlay .cv-modal-box i#bottom-line {
+  background-color: #009fe3;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  #menu #logo {
+    background-image: url("../images/page-logo@2.png");
+    -webkit-background-size: 214px 23px;
+    background-size: 214px 23px;
+  }
+
+  #menu #contact-us {
+    background-image: url("../images/page-email@2.png");
+    -webkit-background-size: 28px 19px;
+    background-size: 28px 19px;
+  }
+
+  #menu #user-guide {
+    background-image: url("../images/page-info@2.png");
+    -webkit-background-size: 21px 21px;
+    background-size: 21px 21px;
+  }
+
+  form#setQAcookie .input-field .validation {
+    background-image: url("../images/validation-icons@2.png");
+    -webkit-background-size: 24px 72px;
+    background-size: 24px 72px;
+  }
+}
